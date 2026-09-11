@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #1d1c4b;
+    font-family: Arial, sans-serif;
+}
+
+.message {
+    min-height: 25px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+.board {
+    display: none;
+    gap: 8px;
+}
+
+.board div {
+    display: contents;
+}
+
+.board button {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #444;
+    border-radius: 12px;
+    background: #252525;
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.board button:hover {
+    background: #333;
+    transform: scale(1.04);
+}
+
+.board button:active {
+    transform: scale(0.96);
+}
+.StartGame {
+    display:grid;
+    outline: none;
+    border: none;
+
+    padding: 15px 35px;
+    border-radius: 12px;
+
+    color: white;
+    background: #1d1c4b;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+
+    transition: 0.2s;
+}
+
+.StartGame:hover {
+    background: #29276b;
+    transform: translateY(-2px);
+}
+
+.StartGame:active {
+    transform: translateY(1px);
+}
